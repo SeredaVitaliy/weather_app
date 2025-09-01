@@ -13,7 +13,7 @@
   <body>
     <div class="card">
       <h1 class="card__title">Weather App</h1>
-      <p class="card__date">Сегодня, <span id="date"></span></p>
+      <p class="card__date">Сегодня - <span id="date"></span></p>
       <div class="card__search">
         <input
           type="text"
@@ -25,20 +25,20 @@
         </button>
       </div>
       <div class="card__weather">
-        <h2 class="card__title card__title--city">New York</h2>
+        <h2 id="city" class="card__title card__title--city">New York</h2>
         <div class="card__block">
           <h3 class="card__title card__title--temp">20°С</h3>
           <img class="card__weather-icon" src="" alt="icon" />
         </div>
-      </div>
-      <div class="card__details">
-        <div class="card__col">
-          <p><i class="fa-solid fa-wind"></i>Ветер</p>
-          <p class="card__info" id="wind">15 м/c</p>
-        </div>
-        <div class="card__col">
-          <p><i class="fa-solid fa-droplet"></i>Влажность</p>
-          <p class="card__info" id="humidity">50 %</p>
+        <div class="card__details">
+          <div class="card__col">
+            <p><i class="fa-solid fa-wind"></i>Ветер</p>
+            <p class="card__info" id="wind">15 м/c</p>
+          </div>
+          <div class="card__col">
+            <p><i class="fa-solid fa-droplet"></i>Влажность</p>
+            <p class="card__info" id="humidity">50</p>
+          </div>
         </div>
       </div>
     </div>
