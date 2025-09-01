@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="card__title">Weather App</h1>
+      <p class="card__date">Сегодня, <span id="date"></span></p>
+      <div class="card__search">
+        <input
+          type="text"
+          class="card__input"
+          placeholder="Введите название города"
+        />
+        <button class="card__btn" id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="card__weather">
+        <h2 class="card__title card__title--city">New York</h2>
+        <div class="card__block">
+          <h3 class="card__title card__title--temp">20°С</h3>
+          <img class="card__weather-icon" src="" alt="icon" />
+        </div>
+      </div>
+      <div class="card__details">
+        <div class="card__col">
+          <p><i class="fa-solid fa-wind"></i>Ветер</p>
+          <p class="card__info" id="wind">15 м/c</p>
+        </div>
+        <div class="card__col">
+          <p><i class="fa-solid fa-droplet"></i>Влажность</p>
+          <p class="card__info" id="humidity">50 %</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

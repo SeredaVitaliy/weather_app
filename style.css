@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  border: 0;
+  outline: 0;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  min-height: 100vh;
+  font-family: "Mulish";
+}
+
+.card {
+  width: 600px;
+  flex-shrink: 1; /*разрешаем уменьшаться*/
+  flex-grow: 0; /*запрещаем увеличиваться*/
+  margin: 0px 15px;
+  background: linear-gradient(180deg, #62b8f6 0%, #2c79c1 100%);
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  height: 250px;
+  transition: all 0.5s;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.card__title--temp {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.card__title-city {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.card__date {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card__search {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.card__input {
+  color: #555;
+  padding: 10px 25px;
+  border-radius: 30px;
+  width: 100%;
+  background: #fff;
+  font-size: 18px;
+  height: 60px;
+}
+
+.card__btn {
+  border-radius: 50%;
+  width: 80px;
+
+  cursor: pointer;
+  background: #fff;
+  height: 60px;
+}
+
+.card__btn i {
+  transition: transform 0.4s;
+}
+
+.card__btn:hover i {
+  transform: scale(1.6);
+}
+
+.card__btn:active i {
+  opacity: 0.5;
+}
+
+.card__weather {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.card__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.card__block img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card__details {
+  padding: 0 20px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.card__col {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__col:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.card__col-info {
+  width: 30px;
+}
+
+.card.acvite .card__weather {
+  animation: show 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes show {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
